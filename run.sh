@@ -7,7 +7,7 @@ if ! command -v nvidia-smi &> /dev/null; then
 fi
 
 # Pull ollama image
-ollama pull qwen2.5-coder:32b
+/usr/bin/ollama pull qwen2.5-coder:32b
 
 # Only apply on Blackwell architecture
 if ! nvidia-smi -a | grep -i "Blackwell" > /dev/null; then
