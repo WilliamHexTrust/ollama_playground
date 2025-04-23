@@ -8,6 +8,7 @@ fi
 
 # Pull ollama image
 echo "Downloading ollama model"
+supervisorctl start ollama
 /usr/bin/ollama pull qwen2.5-coder:32b
 echo "Ollama model download completed"
 
