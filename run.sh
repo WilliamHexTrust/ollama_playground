@@ -7,8 +7,6 @@ if ! command -v nvidia-smi &> /dev/null; then
 fi
 
 # Pull ollama image
-ollama serve
-
 ollama pull qwen2.5-coder:32b
 
 # Only apply on Blackwell architecture
